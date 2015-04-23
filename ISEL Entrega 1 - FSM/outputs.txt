@@ -1,0 +1,41 @@
+Introduzca 50 céntimos por favor...
+Moneda: 0 
+Dinero: 0 
+Introduzca 50 céntimos por favor...
+Moneda: 0 
+Dinero: 0 
+Introduzca 50 céntimos por favor...
+Moneda: 20 
+Dinero: 20 
+Introduzca 50 céntimos por favor...
+Moneda: 50 
+Dinero: 70 
+1. Preparando el vaso... 
+Moneda: 0 
+Dinero: 70 
+2. Sirviendo el café... 
+Moneda: 0 
+Dinero: 70 
+3. Sirviendo la leche... 
+Moneda: 0 
+Dinero: 70 
+4. Su café está listo! 
+Sus vueltas son: 20 
+Moneda: 0 
+Dinero: 0 
+Introduzca 50 céntimos por favor...
+Moneda: 0 
+Dinero: 0 
+Introduzca 50 céntimos por favor...
+Moneda: 100 
+Dinero: 100 
+Moneda: 0 
+Dinero: 100 
+Moneda: 0 
+Dinero: 100 
+Moneda: 0 
+Dinero: 100 
+Moneda: 0 
+Dinero: 100 
+Moneda: 0 
+Dinero: 100 
