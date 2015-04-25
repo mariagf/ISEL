@@ -205,7 +205,7 @@ int main (int argc, char *argv[])
         
 	t = (end.tv_nsec - start.tv_nsec);
         
-       printf("Tiempo ejecutandose: %f ns.\n", t);
+       printf("Tiempo ejecutándose: %f ns.\n", t);
 	trama = 2;
        break;
 
