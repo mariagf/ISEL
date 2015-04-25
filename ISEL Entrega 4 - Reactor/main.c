@@ -162,7 +162,7 @@ task1_func (struct event_handler_t* this)
   fsm_fire(monedero_fsm);
   clock_gettime(CLOCK_REALTIME, &end);
   t += (end.tv_nsec - start.tv_nsec);
-  printf("Tiempo ejecutandose: %f ns.\n", t);
+  printf("Tiempo ejecutándose: %f ns.\n", t);
   t = 0;
 
   timeval_add (&this->next_activation, &this->next_activation, &period);
@@ -180,7 +180,7 @@ task2_func (struct event_handler_t* this)
   fsm_fire (cofm_fsm);
   clock_gettime(CLOCK_REALTIME, &end);
   t += (end.tv_nsec - start.tv_nsec);
-  printf("Tiempo ejecutandose: %f ns.\n", t);
+  printf("Tiempo ejecutándose: %f ns.\n", t);
   t = 0;
  
   timeval_add (&this->next_activation, &this->next_activation, &period);
