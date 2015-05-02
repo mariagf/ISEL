@@ -55,14 +55,11 @@ static void espera ()
 static void pinta ()
 {
 	int i;
-	char n;
-	//struct timespec tiempoEspera = {0, 500000000};
 	actualizarFecha();
 	
 	for(i=0; i<8; i++){
 		espera();
-		n = arrayFecha[i];
-		printf("%c", n);
+		printf("%c", arrayFecha[i];);
 		fflush(stdout);
 	}
 
