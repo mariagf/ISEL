@@ -16,59 +16,6 @@ int sensor;
 int flagLlegada;
 int arrayFecha[8];
 
-static void simbolos(int var){
-switch (var) {
-	case 0:
-		printf(" __ __ \n");
-		printf("|__ __|\n");
-	break;
-
-	case 1:
-		printf("       \n");
-		printf(" __ __ \n");
-	break;
-
-	case 2:
-		printf(" __    \n");
-		printf("|  |__|\n");
-	break;
-
-	case 3:
-		printf("       \n");
-		printf("|__|__|\n");
-	break;
-
-	case 4:
-		printf("    __ \n");
-		printf(" __|__ \n");
-	break;
-
-	case 5:
-		printf("    __ \n");
-		printf("|__|  |\n");
-	break;
-	case 6:
-		printf(" __ __ \n");
-		printf("|__|  |\n");
-	break;
-	case 7:
-		printf("       \n");
-		printf(" __ __|\n");
-	break;
-	case 8:
-		printf(" __ __ \n");
-		printf("|__|__|\n");
-
-	break;	
-	case 9:
-		printf("    __ \n");
-		printf("|__|__|\n");
-	break;
-	default:
-	break;
-	}
-}
-
 void actualizarFecha(){
 
 	time_t fechaOrigen = time(NULL); //epoch 00:00 del 1 de enero de 1970 cuenta los segundos desde entonces.
@@ -78,13 +25,15 @@ void actualizarFecha(){
 	segundos = fecha.tm_sec;
 	minutos = fecha.tm_min;
 	horas = fecha.tm_hour;
-	
-	arrayFecha[0] = horas/10;
-	arrayFecha[1] = horas%10;
-	arrayFecha[3] = minutos/10;
-	arrayFecha[4] = minutos%10;
-	arrayFecha[6] = segundos/10;
-	arrayFecha[7] = segundos%10;
+
+	arrayFecha[0] = '0' + horas/10;
+	arrayFecha[1] = '0' + horas%10;
+	arrayFecha[2] = ':';
+	arrayFecha[3] = '0' + minutos/10;
+	arrayFecha[4] = '0' + minutos%10;
+	arrayFecha[5] = ':';
+	arrayFecha[6] = '0' + segundos/10;
+	arrayFecha[7] = '0' + segundos%10;
 	
 }
 
@@ -107,14 +56,11 @@ static void pinta ()
 {
 	int i;
 	actualizarFecha();
-	for (i=0; i<8; i++){
+	
+	for(i=0; i<8; i++){
 		espera();
-		if (i==2 || i==5){
-			printf("  · ·  \n");
-		}
-		else{
-			simbolos(arrayFecha[i]);
-		}
+		printf("%c", arrayFecha[i]);
+		fflush(stdout);
 	}
 
 	flagLlegada = 1;
